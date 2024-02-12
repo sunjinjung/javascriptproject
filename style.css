@@ -1,0 +1,38 @@
+
+  .container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+  p {
+    /* 수평 중앙 정렬하기 */
+    text-align: center;
+  }
+
+  .center {
+    /* 수평 중앙 정렬하기 */
+    text-align: center;
+  }
+
+  #user-area {
+    width: 50%; 
+    height: 30px;
+    margin-top: 10px; 
+    text-align: center; 
+    border-radius: 20px; 
+    border: none; 
+}
+body {
+   
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "East Sea Dokdo", cursive;
+   
+  }
+  

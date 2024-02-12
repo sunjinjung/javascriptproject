@@ -1,20 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>숫자 맞추기 게임!</h1>
-    <div id="result-area">
-        결과가 나온다
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <span
+            class="navbar-brand mb-0 h1 center mx-auto p-2"
+            style="width: 200px"
+><p>숫자 맞추기 게임</p>
+          </span>
+        </div>
+      </nav>
+      <div style="text-align: center">
+        <img
+          src="https://media.istockphoto.com/vectors/up-and-down-arrow-vector-vector-id650558230?k=6&m=650558230&s=612x612&w=0&h=oOPfT87qlWkkxNR8LY9ds1BgN0PlPRFjf4SmV8Ru8QA="
+        />
+      </div>
+      <div id="result-area">
+        <p class="h4 center mx-auto p-2 d-grid gap-2">결과가 나온다</p>
+      </div>
+      <div id="chance-area">
+        <p class="h4 center mx-auto p-2 d-grid gap-2">남은 찬스: 5번</p>
+      </div>
+      <input
+        type="number"
+        id="user-input"
+        class="h3 center mx-auto p-2 center mx-auto p-2 d-grid gap-2"
+        style="width: 200px"
+      />
+      <button
+        id="play-button"
+        class="btn btn-primary h1 center mx-auto p-2 d-grid gap-2"
+      >
+        <p class="h4">GO!!</p>
+      </button>
+      <button
+        id="reset-button"
+        class="btn btn-danger h1 center mx-auto p-2 d-grid gap-2"
+      >
+        <p class="h4">RESET!!</p>
+      </button>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+      ></script>
+      <script src="main.js"></script>
     </div>
-    <input type="number" id="user-input"/>
-    <button id="play-button">Go!!</button>
-
-    <script src="main.js"></script>
-    
-</body>
+  </body>
 </html>
